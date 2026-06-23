@@ -139,6 +139,50 @@ ifood-case/
 ├─ requirements.txt
 └─ README.md
 ```
+---
+
+## Como executar
+
+1. Crie e ative um ambiente virtual:
+
+```bash
+python -m venv .venv
+```
+
+**Linux / macOS**
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+```bash
+.venv\Scripts\activate
+```
+
+2. Instale as dependências do projeto:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Execute os scripts do pipeline na ordem abaixo:
+
+```bash
+python src/landing/landing.py
+python src/bronze/bronze.py
+python src/silver/silver.py
+python src/gold/gold_monthly_metrics.py
+python src/gold/gold_may_hourly_passenger_metrics.py
+python analysis/analysis.py
+```
+
+### Ordem de execução
+
+- **Landing**: organiza os arquivos brutos de entrada
+- **Bronze**: lê a Landing, adiciona metadados e padroniza o schema
+- **Silver**: aplica curadoria, filtros de qualidade e cria colunas derivadas
+- **Gold**: gera as tabelas analíticas finais
+- **Analysis**: executa as consultas em DuckDB sobre a camada Gold
 
 ---
 
