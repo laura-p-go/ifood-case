@@ -168,12 +168,12 @@ pip install -r requirements.txt
 3. Execute os scripts do pipeline na ordem abaixo:
 
 ```bash
-python src/landing/landing.py
-python src/bronze/bronze.py
-python src/silver/silver.py
-python src/gold/gold_monthly_metrics.py
-python src/gold/gold_may_hourly_passenger_metrics.py
-python analysis/analysis.py
+python src/landing/landing-layer.py
+python src/bronze/bronze-layer.py
+python src/silver/silver-layer.py
+python src/gold/yellow_taxi_may_hourly_passenger_metrics.py
+python src/gold/yellow_taxi_monthly_metrics.py
+python analysis/question-2-and-3.py
 ```
 
 ### Ordem de execução
