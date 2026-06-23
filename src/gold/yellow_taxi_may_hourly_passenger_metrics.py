@@ -54,19 +54,3 @@ load_gold(df_hourly_may, GOLD_MONTHLY_PATH)
 
 spark.stop()
 
-# %%
-
-
-# %%
-
-
-# %%
-
-
-# %%
-
-
-# %%
-
-
-

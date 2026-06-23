@@ -126,7 +126,5 @@ for name_file, df in df_dicts.items():
 # %%
 spark.stop()
 
-# %%
-
 
 

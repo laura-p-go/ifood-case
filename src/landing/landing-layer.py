@@ -74,20 +74,5 @@ for key in base_urls:
         time.sleep(2)
     time.sleep(10)
 
-# %%
-
-
-# %%
-
-
-
-# %%
-
-
-# %%
-r
-
-# %%
-
 
 

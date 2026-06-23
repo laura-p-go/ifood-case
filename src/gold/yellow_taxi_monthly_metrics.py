@@ -57,7 +57,6 @@ load_gold(df_monthly, GOLD_MONTHLY_PATH)
 
 spark.stop()
 
-# %%
 
 
 
